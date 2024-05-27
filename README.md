@@ -4,10 +4,10 @@
 
 ```sh
 curl -X GET http://localhost:8080/items
+```
 Ожидаемый ответ (пример):
 
-json
-Копировать код
+```json
 [
   {
     "id": 1,
@@ -19,7 +19,7 @@ json
     "name": "Another Item",
     "quantity": 5
   }
-]
+]```
 Получение объекта по ID
 sh
 Копировать код
