@@ -1,11 +1,9 @@
 # Примеры использования API
-
 ## Получение списка всех объектов
-
 ```sh
 curl -X GET http://localhost:8080/items
 ```
-### Ожидаемый ответ (пример):
+### Ожидаемый ответ:
 ```json
 [
   {
@@ -24,52 +22,50 @@ curl -X GET http://localhost:8080/items
 ```sh
 curl -X GET http://localhost:8080/items/1
 ```
-Ожидаемый ответ (пример):
-
-json
-Копировать код
+### Ожидаемый ответ:
+```json
 {
   "id": 1,
   "name": "Sample Item",
   "quantity": 10
 }
-Создание нового объекта
-sh
-Копировать код
+```
+## Создание нового объекта
+```sh
 curl -X POST http://localhost:8080/items \
 -H "Content-Type: application/json" \
 -d '{
   "name": "Sample Item",
   "quantity": 10
 }'
-Ожидаемый ответ (пример):
+```
+### Ожидаемый ответ:
 
-json
-Копировать код
+```json
 {
   "id": 3,
   "name": "Sample Item",
   "quantity": 10
 }
-Обновление существующего объекта
-sh
-Копировать код
+```
+## Обновление существующего объекта
+```sh
 curl -X PUT http://localhost:8080/items/1 \
 -H "Content-Type: application/json" \
 -d '{
   "name": "Updated Item",
   "quantity": 20
 }'
-Ожидаемый ответ (пример):
-
-json
-Копировать код
+```
+### Ожидаемый ответ:
+```json
 {
   "id": 1,
   "name": "Updated Item",
   "quantity": 20
 }
+```
 Удаление объекта
-sh
-Копировать код
+```sh
 curl -X DELETE http://localhost:8080/items/1
+```
