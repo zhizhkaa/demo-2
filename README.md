@@ -19,11 +19,12 @@ curl -X GET http://localhost:8080/items
     "name": "Another Item",
     "quantity": 5
   }
-]```
+]
+```
 Получение объекта по ID
-sh
-Копировать код
+```sh
 curl -X GET http://localhost:8080/items/1
+```
 Ожидаемый ответ (пример):
 
 json
