@@ -66,6 +66,6 @@ curl -X PUT http://localhost:8080/items/1 \
 }
 ```
 ## Удаление объекта
-```zsh
+```sh
 curl -X DELETE http://localhost:8080/items/1
 ```
