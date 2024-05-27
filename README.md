@@ -5,8 +5,7 @@
 ```sh
 curl -X GET http://localhost:8080/items
 ```
-Ожидаемый ответ (пример):
-
+### Ожидаемый ответ (пример):
 ```json
 [
   {
@@ -21,7 +20,7 @@ curl -X GET http://localhost:8080/items
   }
 ]
 ```
-Получение объекта по ID
+## Получение объекта по ID
 ```sh
 curl -X GET http://localhost:8080/items/1
 ```
